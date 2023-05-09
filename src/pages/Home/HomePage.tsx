@@ -1,5 +1,7 @@
 import useDevice from "@/hooks/useDevice/useDevice";
 import { useEffect } from "react";
+import { Button, ConfigProvider, DatePicker, theme } from "antd";
+import { StyleProvider } from "@ant-design/cssinjs";
 
 const HomePage = () => {
   const { mac, getMacAddress } = useDevice();
@@ -11,6 +13,19 @@ const HomePage = () => {
       <div className="hero-content text-accent text-center">
         <div className="max-w-md">
           <h3 className="text-3xl font-bold mb-4">Welcome to DevTools</h3>
+          <ConfigProvider
+            theme={{
+              algorithm: theme.defaultAlgorithm,
+              token: {
+                colorPrimary: "#00b96b",
+              },
+            }}
+          >
+            <StyleProvider hashPriority="high">
+              <Button type="primary">Press me</Button>
+              <DatePicker />
+            </StyleProvider>
+          </ConfigProvider>
           <div className="flex flex-col items-start">
             <h5>1. Your MAC address: {mac}</h5>
             <h5>2. Cmd+R quick reload app</h5>

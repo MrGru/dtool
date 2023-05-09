@@ -24,6 +24,11 @@ const routes = [
     name: "Home",
   },
   {
+    path: "/app/draw",
+    icon: <HomeIcon className={iconClasses} />,
+    name: "Draw",
+  },
+  {
     path: "",
     name: "Converter",
     submenu: [

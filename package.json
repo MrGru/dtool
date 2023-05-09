@@ -10,12 +10,15 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.9.1",
     "@codemirror/lang-json": "^6.0.1",
     "@codemirror/view": "^6.10.0",
+    "@excalidraw/excalidraw": "^0.15.2",
     "@heroicons/react": "^2.0.17",
     "@tauri-apps/api": "^1.2.0",
     "@uiw/react-codemirror": "^4.19.16",
     "@uiw/react-split": "^5.8.10",
+    "antd": "^5.4.6",
     "jsonrepair": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
