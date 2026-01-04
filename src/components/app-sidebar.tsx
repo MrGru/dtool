@@ -42,7 +42,7 @@ const data = {
       items: [
         {
           title: "History",
-          url: "#",
+          url: "/history",
         },
         {
           title: "Starred",
@@ -55,17 +55,17 @@ const data = {
       ],
     },
     {
-      title: "Models",
+      title: "Draw",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "ExicaliDraw",
+          url: "/exicalidraw",
         },
         {
-          title: "Explorer",
-          url: "#",
+          title: "TlDraw",
+          url: "/tldraw",
         },
         {
           title: "Quantum",
